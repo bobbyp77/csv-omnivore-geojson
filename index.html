@@ -11,9 +11,25 @@
   #map { position:absolute; top:0; bottom:0; width:100%; }
 </style>
 </head>
+
+ 
 <body>
 <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
 
+//zoomslider
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-zoomslider/v0.7.0/L.Control.Zoomslider.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-zoomslider/v0.7.0/L.Control.Zoomslider.css' rel='stylesheet' />
+<style>
+/* Adjustments to account for mapbox.css box-sizing rules */
+.leaflet-control-zoomslider-knob { width:14px; height:6px; }
+.leaflet-container .leaflet-control-zoomslider-body {
+  -webkit-box-sizing:content-box;
+     -moz-box-sizing:content-box;
+          box-sizing:content-box;
+  }
+</style>  
+
+  
 <div id='map'></div>
 
 <script>
@@ -41,6 +57,7 @@ geojsonLayer.addTo(map);
 //omnivore.csv('airports.csv').addTo(map);
 //
 
+//zoomslider call
 L.control.zoomslider().addTo(map);
 
 </script>

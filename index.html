@@ -18,6 +18,11 @@
 
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiYm9iYnlwNzciLCJhIjoiY2owdWVhZHRkMDM0cjM4bHJxaW80ZmF5aiJ9.vd2rapEAmFNK6-MUwQczyQ';
+
+// test from stack overflow @nikoshr
+var locations = 'airports.csv';  
+//
+  
 var map = L.mapbox.map('map')
   .setView([38, -95], 4)
   .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
@@ -29,7 +34,13 @@ var map = L.mapbox.map('map')
 // - The file must either be on the same domain as the page that requests it,
 //   or both the server it is requested from and the user's browser must
 //   support CORS.
-omnivore.csv('airports.csv').addTo(map);
+
+// test from stack overflow @nikoshr
+var geojsonLayer = omnivore.csv(locations);
+geojsonLayer.addTo(map);  
+//omnivore.csv('airports.csv').addTo(map);
+//
+  
 </script>
 </body>
 </html>

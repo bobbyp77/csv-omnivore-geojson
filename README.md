@@ -4,6 +4,9 @@
 Mapbox Docs - Loading markers from CSV:
 https://docs.mapbox.com/mapbox.js/example/v1.0.0/markers-from-csv/
 
+Mapbox sample csv file, airports.csv:
+https://docs.mapbox.com/help/glossary/csv/
+
 Loading issue solved via stackoverflow @nikoshr:
 https://stackoverflow.com/questions/49425400/failing-to-load-csv-data-through-omnivore
 

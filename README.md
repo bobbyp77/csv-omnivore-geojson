@@ -1,3 +1,17 @@
+
+## Inspired By
+
+Mapbox Docs - Loading markers from CSV:
+https://docs.mapbox.com/mapbox.js/example/v1.0.0/markers-from-csv/
+
+Loading issue solved via stackoverflow @nikoshr:
+https://stackoverflow.com/questions/49425400/failing-to-load-csv-data-through-omnivore
+
+Deployment to GitHub Pages:
+https://medium.com/javascript-in-plain-english/how-to-host-a-static-website-for-free-7a2a959f5e4
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/bobbyp77/csv-omnivore-geojson/edit/master/README.md) to maintain and preview the content for your website in Markdown files.

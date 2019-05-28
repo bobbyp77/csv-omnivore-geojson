@@ -25,7 +25,7 @@ var locations = 'airports.csv';
   
 var map = L.mapbox.map('map')
   .setView([38, -95], 4)
-  .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
+  .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/satellite-streets-v10'));
 
 // Omnivore will AJAX-request this file behind the scenes and parse it:
 // note that there are considerations:
@@ -40,8 +40,6 @@ var geojsonLayer = omnivore.csv(locations);
 geojsonLayer.addTo(map);  
 //omnivore.csv('airports.csv').addTo(map);
 //
-
-L.control.zoomslider().addTo(map);
 
 </script>
 </body>
